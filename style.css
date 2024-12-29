@@ -118,14 +118,20 @@ h1, h2, h3, h4, h5, h6 {
     width: auto;
     height: 100px;
     position: relative;
-    top: 100px;
+    top: 120px;
 }
 
-.header-text {
+.header-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text-1, .header-text-2 {
     position: relative;
     top: 140px;
     left: -10px;
-    font-size: 1rem;
+    font-size: 1.6rem;
+    font-family: "Nordic Bold", Luminari, Papyrus, Copperplate;
 }
 
 .form-container {
@@ -138,9 +144,5 @@ h1, h2, h3, h4, h5, h6 {
     width: auto;
     height: 230px;
     background-color: rgba(89, 169, 139, 0.07);
-}
-
-.header-text {
-    font-family: "Nordic Bold", Luminari, Papyrus, Copperplate;
 }
 
