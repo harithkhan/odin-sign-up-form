@@ -1,0 +1,141 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+  
+* {
+    margin: 0;
+}
+  
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+  
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+  
+input, button, textarea, select {
+    font: inherit;
+}
+  
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+  
+p {
+    text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+  
+#root, #__next {
+    isolation: isolate;
+}
+
+.page-container {
+    width: 1000px;
+    height: 700px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.image-container {
+    width: 400px;
+    height: 700px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container > img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.image-caption-container {
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    background-color: rgba(185, 176, 119, 0.57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 300px;
+}
+
+.image-caption {
+    color: white;
+    font-family: "Nordic Bold", Luminari, Papyrus, Copperplate;
+    font-size: 2rem;
+}
+
+.image-credit {
+    position: absolute;
+    bottom: 10px;
+    left: 100px;
+    color: white;
+    font-size: 0.8rem;
+    font-family: Arial, Verdana, Tahoma;
+}
+
+.image-credit > a {
+    color: #B9B077;
+    text-decoration: none;    
+}
+
+.content-container {
+    width: 600px;
+    height: 700px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container {
+    width: auto;
+    height: 230px;
+    background-color: rgba(89, 169, 139, 0.07);
+    display: flex;
+    position: relative;
+}
+
+.header-container > img {
+    width: auto;
+    height: 100px;
+    position: relative;
+    top: 100px;
+}
+
+.header-text {
+    position: relative;
+    top: 140px;
+    left: -10px;
+    font-size: 1rem;
+}
+
+.form-container {
+    width: auto;
+    height: 240px;
+
+}
+
+.footer-container {
+    width: auto;
+    height: 230px;
+    background-color: rgba(89, 169, 139, 0.07);
+}
+
+.header-text {
+    font-family: Luminari, Papyrus, Copperplate;
+}
+
