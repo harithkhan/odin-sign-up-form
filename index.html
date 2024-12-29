@@ -22,62 +22,98 @@
                 <img src="img/logo.png">
                 <div class="header-text-container">
                     <div class="header-text-1">Odin's CSS has terrorized Asgardians long enough</div>
-                    <div class="header-text-2">Join Loki's rebellion against CSS! I've had it up to here!</div>
+                    <div class="header-text-2">Join Loki's rebellion against CSS!</div>
                 </div>
             </div>
             <div class="form-container">
                 <form action="" method="post">
                     <fieldset>
-                        <label for="given-name">GIVEN NAME:</label>
-                        <input type="text" id="given-name" name="given-name" required>
-                        <label for="clan-name">CLAN NAME:</label>
-                        <input type="text" id="clan-name" name="clan=name" required>
+                        <div class="form-group">
+                            <label for="given-name">GIVEN NAME</label>
+                            <input type="text" id="given-name" name="given-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="clan-name">CLAN NAME</label>
+                            <input type="text" id="clan-name" name="clan=name" required>
+                        </div>
                     </fieldset>
                     <fieldset>
-                        <label for="realm">REALM OF DOMINION:</label>
-                        <select id="realm" name="realm">
-                            <option value="asgard">Asgard</option>
-                            <option value="midgard">Midgard</option>
-                            <option value="jotunheim">Jotunheim</option>
-                            <option value="vanaheim">Vanaheim</option>
-                            <option value="alfheim">Alfheim</option>
-                            <option value="svartalfheim-nidavellir">Svartalfheim/Nidavellir</option>
-                            <option value="helheim">Helheim</option>
-                            <option value="muspelheim">Muspelheim</option>
-                            <option value="niflheim">Niflheim</option>
-                        </select>
-                        <label for="species">SPECIES:</label>
-                        <select id="species" name="species">
-                            <option value="aesir">Aesir</option>
-                            <option value="vanir">Vanir</option>
-                            <option value="jotnar">Jotnar (Giants)</option>
-                            <option value="ljosalfar">Light Elf (Ljosalfar)</option>
-                            <option value="dokkalfar">Dark Elf (Dokkalfar)</option>
-                            <option value="dvegar">Dwarf (Dvergar)</option>
-                            <option value="human">Human</option>
-                            <option value="dead-soul">Dead Soul</option>
-                            <option value="valkyrie">Valkyrie</option>
-                            <option value="norn">Norn</option>
-                            <option value="reptile">Dragon or Serpant</option>
-                            <option value="wolf">Wolf</option>
-                            <option value="landvaettir">Landvaettir</option>
-                            <option value="disir">Disir</option>
-                            <option value="fire-giant">Fire Giant</option>
-                            <option value="frost-giant">Frost Giant</option>
-                            <option value="troll">Troll</option>
-                        </select>
+                        <div class="form-group">
+                            <label for="realm">DOMINION REALM</label>
+                            <select id="realm" name="realm" required>
+                                <option value="" disabled selected hidden>Select an option</option>
+                                <option value="alfheim">Alfheim</option>
+                                <option value="asgard">Asgard</option>
+                                <option value="helheim">Helheim</option>
+                                <option value="jotunheim">Jotunheim</option>
+                                <option value="midgard">Midgard</option>
+                                <option value="muspelheim">Muspelheim</option>
+                                <option value="niflheim">Niflheim</option>
+                                <option value="svartalfheim-nidavellir">Svartalfheim/Nidavellir</option>
+                                <option value="vanaheim">Vanaheim</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="species">SPECIES</label>
+                            <select id="species" name="species" required>
+                                <option value="" disabled selected hidden>Select an option</option>
+                                <option value="aesir">Aesir</option>
+                                <option value="dokkalfar">Dark Elf (Dokkalfar)</option>
+                                <option value="disir">Disir</option>
+                                <option value="dead-soul">Dead Soul</option>
+                                <option value="reptile">Dragon or Serpant</option>
+                                <option value="dvegar">Dwarf (Dvergar)</option>
+                                <option value="fire-giant">Fire Giant</option>
+                                <option value="frost-giant">Frost Giant</option>
+                                <option value="human">Human</option>
+                                <option value="jotnar">Jotnar (Giants)</option>
+                                <option value="landvaettir">Landvaettir</option>
+                                <option value="ljosalfar">Light Elf (Ljosalfar)</option>
+                                <option value="norn">Norn</option>
+                                <option value="troll">Troll</option>
+                                <option value="valkyrie">Valkyrie</option>
+                                <option value="vanir">Vanir</option>
+                                <option value="wolf">Wolf</option>
+                            </select>
+                        </div>
                     </fieldset>
                     <fieldset>
-                        <label for="email">EMAIL:</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="phone-number">PHONE NUMBER:</label>
-                        <input type="tel" id="phone-number" name="phone-number">
+                        <div class="form-group">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" id="phone-number" name="phone-number" placeholder="Must be valid in Midgard">
+                        </div>
                     </fieldset>
                     <fieldset>
-                        <label for="password">PASSWORD:</label>
-                        <input type="password" id="password" name="password" required>
-                        <label for="confirm-password">CONFIRM PASSWORD:</label>
-                        <input type="password" id="confirm-password" name="confirm-password" required>
+                        <div class="form-group">
+                            <label for="password">PASSWORD</label>
+                            <input 
+                                type="password" 
+                                id="password" 
+                                name="password" 
+                                required 
+                                minlength="8" 
+                                maxlength="16" 
+                                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{8,16}" 
+                                title="Password must be 8-16 characters long, include at least one uppercase letter, one lowercase letter, one number, and one special character."
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input 
+                                type="password" 
+                                id="confirm-password" 
+                                name="confirm-password" 
+                                required 
+                                minlength="8" 
+                                maxlength="16" 
+                                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{8,16}" 
+                                title="Password must be 8-16 characters long, include at least one uppercase letter, one lowercase letter, one number, and one special character."
+                            >
+                        </div>
                     </fieldset>
                 </form>
             </div>

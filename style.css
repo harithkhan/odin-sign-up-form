@@ -45,17 +45,6 @@ h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
-input,
-textarea,
-select,
-button {
-  width: 150px;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-
 .page-container {
     width: 1000px;
     height: 700px;
@@ -119,7 +108,7 @@ button {
 
 .header-container {
     width: auto;
-    height: 230px;
+    height: 200px;
     background-color: rgba(89, 169, 139, 0.07);
     display: flex;
     position: relative;
@@ -129,7 +118,7 @@ button {
     width: auto;
     height: 100px;
     position: relative;
-    top: 120px;
+    top: 100px;
 }
 
 .header-text-container {
@@ -139,7 +128,7 @@ button {
 
 .header-text-1, .header-text-2 {
     position: relative;
-    top: 140px;
+    top: 120px;
     left: -10px;
     font-size: 1.6rem;
     font-family: "Nordic Bold", Luminari, Papyrus, Copperplate;
@@ -147,8 +136,61 @@ button {
 
 .form-container {
     width: auto;
-    height: 250px;
+    height: 300px;
+}
 
+input,
+textarea,
+select,
+button {
+  width: 230px;
+  padding: 0;
+  padding-left: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  height: 32px;
+  border: 2px solid;
+  border-color: rgba(185, 176, 119, 0.27);
+  border-radius: 6px;
+  outline: none;
+}
+
+input[type="email"]:focus:invalid,
+input[type="password"]:focus:invalid {
+    border-color: red;
+}
+
+input:focus, select:focus {
+    border-color: #b9b077;
+    outline: none;
+}
+
+input:hover, select:hover {
+    border-color: #B9B077;
+}
+
+input:valid:not(:placeholder-shown), select:valid {
+    border-color: #59A98B;
+}
+
+input::placeholder {
+    font-style: italic; 
+    color: gray; 
+    font-size: 0.8rem;
+}
+
+fieldset {
+    display: flex;
+    gap: 50px;
+    border: none;
+    position: relative;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 30px;
 }
 
 .footer-container {
