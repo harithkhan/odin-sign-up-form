@@ -136,13 +136,42 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-container {
     width: auto;
-    height: 240px;
+    height: 250px;
 
 }
 
 .footer-container {
     width: auto;
-    height: 230px;
+    height: 220px;
     background-color: rgba(89, 169, 139, 0.07);
+    position: relative;
+}
+
+.footer-content {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.button {
+    position: relative;
+    background-color: #B9B077;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    width: 150px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.log-in {
+    position: relative;
+    top: 20px;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #B9B077;
+    font-weight: bold;
 }
 
