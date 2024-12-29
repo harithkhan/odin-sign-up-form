@@ -12,6 +12,7 @@ body {
     font-size: 16px;
     display: flex;
     justify-content: center;
+    font-family: Arial, Verdana, Tahoma;
 }
   
 img, picture, video, canvas, svg {
@@ -85,7 +86,6 @@ h1, h2, h3, h4, h5, h6 {
     left: 100px;
     color: white;
     font-size: 0.8rem;
-    font-family: Arial, Verdana, Tahoma;
 }
 
 .image-credit > a {
