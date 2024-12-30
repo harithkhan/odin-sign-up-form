@@ -179,6 +179,10 @@ input::placeholder {
     font-size: 0.8rem;
 }
 
+option[disabled] {
+    font-style: italic;
+}
+
 fieldset {
     display: flex;
     gap: 50px;
