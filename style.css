@@ -212,16 +212,16 @@ fieldset {
     border: none;
     border-radius: 6px;
     color: white;
-    width: 150px;
+    width: 510px;
+    height: 32px;
     font-size: 1.2rem;
     font-weight: bold;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: background-color 0.3s ease;
     transform-origin: left;
 }
 
 .button:hover {
-    background-color: rgba(185, 176, 119, 0.8);
-    transform: scale(1.1);
+    background-color: rgba(185, 176, 119, 0.5);
 }
 
 .button-container a {
