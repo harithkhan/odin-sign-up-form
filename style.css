@@ -216,6 +216,7 @@ fieldset {
     font-size: 1.2rem;
     font-weight: bold;
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    transform-origin: left;
 }
 
 .button:hover {
