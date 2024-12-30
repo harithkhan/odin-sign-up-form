@@ -54,7 +54,7 @@ html, body {
 
 .page-container {
     width: 1000px;
-    height: 700px;
+    height: 800px;
     box-sizing: border-box;
     display: flex;
     background-color: white;
@@ -62,7 +62,7 @@ html, body {
 
 .image-container {
     width: 400px;
-    height: 700px;
+    height: 800px;
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
@@ -109,7 +109,7 @@ html, body {
 
 .content-container {
     width: 600px;
-    height: 700px;
+    height: 800px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -117,7 +117,7 @@ html, body {
 
 .header-container {
     width: auto;
-    height: 200px;
+    height: 234px;
     background-color: rgba(89, 169, 139, 0.07);
     display: flex;
     position: relative;
@@ -127,7 +127,7 @@ html, body {
     width: auto;
     height: 100px;
     position: relative;
-    top: 100px;
+    top: 130px;
 }
 
 .header-text-container {
@@ -137,7 +137,7 @@ html, body {
 
 .header-text-1, .header-text-2 {
     position: relative;
-    top: 120px;
+    top: 150px;
     left: -10px;
     font-size: 1.6rem;
     font-family: "Nordic Bold", Luminari, Papyrus, Copperplate;
@@ -145,7 +145,13 @@ html, body {
 
 .form-container {
     width: auto;
-    height: 400px;
+    height: 433px;
+    position: relative;
+}
+
+form {
+    position: relative;
+    top: 10px;
 }
 
 input,
@@ -252,7 +258,7 @@ fieldset {
 
 .footer-container {
     width: auto;
-    height: 100px;
+    height: 133px;
     background-color: rgba(89, 169, 139, 0.07);
     position: relative;
 }
