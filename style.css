@@ -215,7 +215,7 @@ fieldset {
     width: 150px;
     font-size: 1.2rem;
     font-weight: bold;
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
     transform-origin: left;
 }
 
@@ -228,6 +228,11 @@ fieldset {
     text-decoration: none;
     color: #B9B077;
     font-weight: bold;
+    transition: filter 0.3s ease;
+}
+
+.button-container a:hover {
+    filter: brightness(0.7);
 }
 
 .footer-container {
