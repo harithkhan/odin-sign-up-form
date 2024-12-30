@@ -160,6 +160,11 @@ input[type="password"]:focus:invalid {
     border-color: red;
 }
 
+/* Invalid input after the user has started typing */
+input[type="password"]:invalid:not(:placeholder-shown) {
+    border-color: red;
+}
+
 input:focus, select:focus {
     border-color: #b9b077;
     outline: none;
