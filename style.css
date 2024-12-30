@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-container {
     width: auto;
-    height: 300px;
+    height: 400px;
 }
 
 input,
@@ -179,10 +179,6 @@ input::placeholder {
     font-size: 0.8rem;
 }
 
-option[disabled] {
-    font-style: italic;
-}
-
 fieldset {
     display: flex;
     gap: 50px;
@@ -197,17 +193,12 @@ fieldset {
     left: 30px;
 }
 
-.footer-container {
-    width: auto;
-    height: 220px;
-    background-color: rgba(89, 169, 139, 0.07);
+.button-container {
+    display: flex;
+    flex-direction: column;
     position: relative;
-}
-
-.footer-content {
-    position: absolute;
     top: 20px;
-    left: 30px;
+    left: 43px;
 }
 
 .button {
@@ -221,14 +212,28 @@ fieldset {
     font-weight: bold;
 }
 
-.log-in {
-    position: relative;
-    top: 16px;
-}
-
-.footer-content a {
+.button-container a {
     text-decoration: none;
     color: #B9B077;
     font-weight: bold;
+}
+
+
+.footer-container {
+    width: auto;
+    height: 100px;
+    background-color: rgba(89, 169, 139, 0.07);
+    position: relative;
+}
+
+.footer-content {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.log-in {
+    position: relative;
+    top: 16px;
 }
 
