@@ -153,6 +153,7 @@ button {
   border-color: rgba(185, 176, 119, 0.27);
   border-radius: 6px;
   outline: none;
+  transition: border-color 0.3s ease;
 }
 
 input[type="email"]:focus:invalid,
@@ -160,7 +161,6 @@ input[type="password"]:focus:invalid {
     border-color: red;
 }
 
-/* Invalid input after the user has started typing */
 input[type="password"]:invalid:not(:placeholder-shown) {
     border-color: red;
 }
