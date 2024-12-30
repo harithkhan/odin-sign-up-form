@@ -203,7 +203,7 @@ fieldset {
     flex-direction: column;
     position: relative;
     top: 20px;
-    left: 43px;
+    left: 44px;
 }
 
 .button {
@@ -217,12 +217,16 @@ fieldset {
     font-weight: bold;
 }
 
+.button:hover {
+    background-color: rgba(185, 176, 119, 0.8);
+    transform: scale(1.1);
+}
+
 .button-container a {
     text-decoration: none;
     color: #B9B077;
     font-weight: bold;
 }
-
 
 .footer-container {
     width: auto;
